@@ -1,0 +1,157 @@
+/* Estilização do container da lista de tarefas */
+.lista-tarefas {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Modo escuro para a lista de tarefas */
+  body.dark-mode .lista-tarefas {
+    background: #1e1e1e;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Campo de entrada e botão adicionar */
+  .input-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .lista-tarefas input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #6200ea;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  body.dark-mode .lista-tarefas input {
+    background: #333;
+    color: white;
+    border-color: #bb86fc;
+  }
+  
+  /* Botão Adicionar - agora centralizado corretamente */
+  .add-button {
+    background: #007bff;
+    color: white;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .add-button:hover {
+    background: #0056b3;
+  }
+  
+  /* Ajuste para modo escuro */
+  body.dark-mode .add-button {
+    background: #03dac6;
+    color: black;
+  }
+  
+  body.dark-mode .add-button:hover {
+    background: #00a896;
+  }
+  
+  /* Lista de tarefas */
+  .lista-tarefas ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+  }
+  
+  /* Itens da lista de tarefas */
+  .task-item {
+    background: #e0e0e0;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Ajuste para modo escuro */
+  body.dark-mode .task-item {
+    background: #333;
+  }
+  
+  /* Estilização quando a tarefa estiver concluída */
+  .task-item.completed {
+    background: #d4edda;
+    text-decoration: line-through;
+    color: #155724;
+  }
+  
+  /* Modo escuro para tarefas concluídas */
+  body.dark-mode .task-item.completed {
+    background: #1b5e20;
+    color: #c8e6c9;
+  }
+  
+  /* Botão para marcar tarefa como concluída */
+  .complete-button {
+    background: #28a745;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 10px;
+    transition: background 0.3s;
+  }
+  
+  .complete-button:hover {
+    background: #218838;
+  }
+  
+  /* Modo escuro do botão de concluir */
+  body.dark-mode .complete-button {
+    background: #03dac6;
+    color: black;
+  }
+  
+  body.dark-mode .complete-button:hover {
+    background: #00a896;
+  }
+  
+  /* Botão para remover tarefa */
+  .remove-button {
+    background: #dc3545;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 10px;
+    transition: background 0.3s;
+  }
+  
+  .remove-button:hover {
+    background: #c82333;
+  }
+  
+  /* Modo escuro do botão de remover */
+  body.dark-mode .remove-button {
+    background: #ff5252;
+  }
+  
+  body.dark-mode .remove-button:hover {
+    background: #e00000;
+  }
+  
